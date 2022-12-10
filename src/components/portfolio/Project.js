@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { portfolioData } from '../../data/portfolioData';
 class Project extends Component {
     state ={
         showInfo: false

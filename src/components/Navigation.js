@@ -4,12 +4,6 @@ import { NavLink } from 'react-router-dom'
 const Navigation = () => {
     return (
        <div className="sidebar">
-            <div className="id">
-                <div className="idContent">
-                    <img src='./media/thib.jpeg' alt="profil-pic" width="170px"/>
-                    <h3>Thibaut Lenoir</h3>
-                </div>
-            </div>
             <div className="navigation">
                 <ul>
                     <li>

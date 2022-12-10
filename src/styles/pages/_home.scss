@@ -4,7 +4,6 @@
     background: linear-gradient(115deg, $color-1 50%, transparent 100%);
     min-height: $minHeight;
     width: 100%;
-    min-height: 500px;
     border-radius: $borderRadius;
     position: relative;
     overflow: hidden;
@@ -38,6 +37,15 @@
         color: $color-3;
         text-shadow: 1px 4px 1px $black;
       }
+      img{
+        width:280px;
+        position:relative;
+        bottom: 80px;
+        left:20%;
+
+        border-radius: 50%;
+        box-shadow: 0 0 0 4px $color-3, 0 0 0 8px $color-4, 0 0 0 12px $color-2;
+      }
       .pdf {
         a {
           font-size: 1.5rem;
@@ -62,8 +70,12 @@
 }
 @media screen and (max-width:580px){
   .homeContent {
+    
     &:after {
-    background: url('../../media/bureau.jpg') no-repeat 60% 50%/cover !important;
+      background: url('../../media/bureau.jpg') no-repeat 60% 50%/cover !important;
+    }
+    img{
+      max-width:150px;
     }
     h1 {
       font-size: 3rem !important;
@@ -71,5 +83,7 @@
     h2 {
       font-size: 1.8rem !important;
     }
+
+    
   }
 }
